@@ -4,7 +4,8 @@ while True:
     print("1.- Suma")
     print("2.- Resta")
     print("3.- Multiplicación")
-    print("4.- División")    
+    print("4.- División")
+    print("5. Suma 3 valores")    
     print("S.- Salir")
     opc=input('Ingrese Opción: ')
     if opc=='1':
@@ -66,6 +67,28 @@ while True:
                 print('Debe ser un entero el operando 2')
         divi=oper1/oper2
         print('La División es igual a ',divi)
+    
+    elif opc =="5":
+        while True:
+            try:
+                oper1 = int(input("Ingrese operando 1"))
+                break
+            except:
+                print("Debe ser un entero el operando 1")
+        while True:
+            try:
+                oper2 = int(input("Ingrese operando 2"))
+                break
+            except:
+                print("El operando 2 debe ser un entero")
+        while True:
+            try:
+                oper3 = int(input("Ingrese operando 3"))
+                break
+            except:
+                print("el operando 3 debe ser un entero")
+        suma = oper1 + oper2 + oper3
+        print("La suma es igual a: ", suma)
 #     try:
 #            divi=oper1/oper2
 #            print('La División es igual a ',divi)
